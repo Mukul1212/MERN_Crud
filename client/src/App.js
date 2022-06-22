@@ -50,7 +50,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>CRUD APP</h1>
+        <h1>todo</h1>
        
        
         <div className="top">
@@ -68,7 +68,8 @@ function App() {
             key={item._id}
             text={item.text}
             remove={() => deleteTodo(item._id)}
-            update={() => updateTodo(item._id, item.text)} />)}
+            update={() => updateTodo(item._id, item.text)}
+            />  )}
         </div>
 
       </div>
